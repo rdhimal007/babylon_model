@@ -35,10 +35,10 @@ var createScene = function () {
 
     //import object
 
-    BABYLON.SceneLoader.ImportMesh("", "scenes/", "dummy3.babylon", scene, function (meshes) {
-
-
-    });
+    // BABYLON.SceneLoader.ImportMesh("", "scenes/", "dummy3.babylon", scene, function (meshes) {
+    //
+    //
+    // });
 
     //  shape for the ground.
     // var model = BABYLON.ImportMesh("dummy3.babylon",22, scene);
