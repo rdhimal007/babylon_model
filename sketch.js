@@ -30,7 +30,20 @@ var createScene = function () {
 
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.7;
+    // var model = new model;
 
+
+    //import object
+
+    BABYLON.SceneLoader.ImportMesh("", "scenes/", "dummy3.babylon", scene, function (meshes) {
+
+
+    });
+
+    //  shape for the ground.
+    // var model = BABYLON.ImportMesh("dummy3.babylon",22, scene);
+
+    var square = BABYLON.MeshBuilder.CreateGround("baseFlorr", {width: 10, height: 7}, scene);
 
     var newsphere = createSphere(0, 1, 0, 2);
     newsphere.material = hexMat('#ff0000');
